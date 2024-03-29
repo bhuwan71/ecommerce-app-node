@@ -3,7 +3,7 @@ import { Router } from "express";
 import authRouter from "./authRoute";
 import docsRouter from "./docsRoute";
 import userRouter from "./userRoutes";
-
+import productRouter from "./productRoute";
 const appRouter = Router();
 
 // all routes
@@ -15,6 +15,10 @@ const appRoutes = [
   {
     path: "/user",
     router: userRouter,
+  },
+  {
+    path: "/product",
+    router: productRouter,
   },
   {
     path: "/docs",
